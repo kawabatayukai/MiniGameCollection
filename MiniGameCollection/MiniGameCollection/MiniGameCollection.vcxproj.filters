@@ -36,6 +36,9 @@
     <ClCompile Include="AbstractScene.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Scene_Title.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_Pass.h">
@@ -51,6 +54,9 @@
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Scene_GameMain.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Title.h">
       <Filter>ソース ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>

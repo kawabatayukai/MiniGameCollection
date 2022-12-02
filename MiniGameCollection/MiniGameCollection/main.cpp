@@ -1,7 +1,7 @@
 #include"DxLib.h"
 
 #include"SceneManager.h"
-#include"Scene_GameMain.h"
+#include"Scene_Title.h"
 
 
 /*　　変数　　*/
@@ -19,7 +19,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	if (DxLib_Init() == -1) { return -1; }  //Dxﾗｲﾌﾞﾗﾘ初期処理
 
 	//シーンマネージャー     　　　　　　　　　　　　　　　タイトルを設定
-	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMainScene()));
+	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new TitleScene()));
 
 	SetDrawScreen(DX_SCREEN_BACK);         //描画先画面を裏にする
 
