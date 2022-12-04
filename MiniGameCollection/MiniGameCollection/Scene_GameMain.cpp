@@ -2,6 +2,9 @@
 #include"Scene_GameMain.h"
 #include"Game_Pass.h"
 
+//最小化 アリ/ナシ
+#define WINDOW_MINIMIZE
+
 //コンストラクタ
 GameMainScene::GameMainScene()
 {
@@ -11,16 +14,18 @@ GameMainScene::GameMainScene()
 	//カーソルオブジェクト生成・コンストラクタ呼び出し
 	obj_cursor = new Cursor();
 
+	//起動クラスオブジェクト
+	obj_starter = new ProcessStarter();
+
 	//フォントの作成
 	font_exp = CreateFontToHandle(NULL, 80, 3, DX_FONTTYPE_ANTIALIASING_EDGE_4X4);
-
-	ZeroMemory(&start_info, sizeof(start_info));    //start_info(STARTUPINFO構造体型)を初期化
-	start_info.cb = sizeof(start_info);             //メンバcb（構造体サイズ）を設定
 }
 
 //デストラクタ
 GameMainScene::~GameMainScene()
 {
+	delete obj_cursor;
+	delete obj_starter;
 	DeleteFontToHandle(font_exp);
 }
 
@@ -31,7 +36,7 @@ void GameMainScene::Update()
 	obj_cursor->CursorUpdate(keyflg);
 
 	//ゲームを起動
-	StartUp(&process_info, &start_info, obj_cursor->GetGameNum());
+	Process_Start(obj_cursor->GetGameNum());
 }
 
 //描画
@@ -57,7 +62,7 @@ AbstractScene* GameMainScene::ChangeScene()
 }
 
 //ゲームを起動
-void GameMainScene::StartUp(PROCESS_INFORMATION* process, STARTUPINFO* start, int GameNum)
+void GameMainScene::Process_Start(int GameNum)
 {
 	//Aボタンで実行
 	if (keyflg & PAD_INPUT_A)
@@ -65,36 +70,26 @@ void GameMainScene::StartUp(PROCESS_INFORMATION* process, STARTUPINFO* start, in
 		//0～10(画面上では11個)
 		if (GameNum < GAME_MAX)
 		{
-			//実行対象の.exe
-			const char* Start_Game = Game_Pass[GameNum];
-
-			//実行対象の.exeが置いてある場所(ｶﾚﾝﾄﾃﾞｨﾚｸﾄﾘ)
-			const char* Start_Current = Current_Pass[GameNum];
-
-			//exe実行               ゲームのパス　　　　
-			int ret = CreateProcess(Start_Game, (LPSTR)"", NULL, NULL, FALSE, NULL, NULL,
-				Start_Current, start, process);
-
-			if (ret)
+			//別のプロセスが起動していない時
+			if (obj_starter->GetStartResult() == false)
 			{
-				//起動に失敗！
-				return;
-			}
-			else
-			{
-				//CloseHandle(process->hThread);
 
-				//実行対象が終了するまで待つ
-				//WaitForSingleObject(process->hProcess, INFINITE);
-				CloseHandle(process->hProcess);
+#ifdef WINDOW_MINIMIZE
+				SetWindowMinimizeFlag(TRUE);   //元ウィンドウを最小化
+#endif 
+
+				//プロセスを起動
+				obj_starter->StartUp(Game_Path[GameNum], Current_Path[GameNum]);
 			}
 		}
 		else
 		{
 			//Game_Num == 11 (画面上では12個目)
-
 			DrawString(0, 20, "HELP", 0xffffff);
 		}
-
 	}
+
+#ifdef WINDOW_MINIMIZE
+	SetWindowMinimizeFlag(FALSE);              //最小化を解除
+#endif
 }

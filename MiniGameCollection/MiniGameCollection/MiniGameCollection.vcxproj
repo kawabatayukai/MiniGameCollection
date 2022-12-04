@@ -154,6 +154,7 @@
     <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="Cursor.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ProcessStarter.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Scene_GameMain.cpp" />
     <ClCompile Include="Scene_Title.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Cursor.h" />
     <ClInclude Include="Game_Pass.h" />
+    <ClInclude Include="ProcessStarter.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Scene_GameMain.h" />
     <ClInclude Include="Scene_Title.h" />

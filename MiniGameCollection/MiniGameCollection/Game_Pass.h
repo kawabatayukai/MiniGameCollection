@@ -2,8 +2,8 @@
 #define GAME_MAX 11
 
 /*****************************************************************/   /***************************************/
-/*                                                               */   /*                                     */
-/*  配列の順番は選択画面のアイコンと同じになるようにしてください */   /*   "LPSTR"型　==  const char*型　    */
+/*                                                               */   /*  "LPSTR"型　==  char*型             */
+/*  配列の順番は選択画面のアイコンと同じになるようにしてください */   /*  "LPCSTR"   ==  const char* 　      */
 /*                                                               */   /*                         らしいです  */
 /*****************************************************************/   /***************************************/
 
@@ -21,23 +21,39 @@
 
 
 //exeファイルの相対パス（このプラグラムから見てどこにあるか）
-const char* Game_Pass[GAME_MAX] =
+const char* Game_Path[GAME_MAX] =
 {
 	// 0
-	"All_Games\\Snake_Game\\SnakeGame_MyProject_ver 0.20.exe",
+	"All_Games\\Snake_Game\\SnakeGame_MyProject_ver Test0.15.exe",
 	// 1
 	"All_Games\\Neko_Game\\Mini_Neco.exe",
 	// 2
 	"All_Games\\Pac_Man\\Game_PACMAN.exe",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
 };
 
 
 //カレントディレクトリ名（exeファイルが置いてある場所）
-const char* Current_Pass[GAME_MAX] =
+const char* Current_Path[GAME_MAX] =
 {
 	"All_Games\\Snake_Game",
 	"All_Games\\Neko_Game",
 	"All_Games\\Pac_Man"
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
 };
 
 //説明文　タイトル

@@ -1,7 +1,7 @@
 #pragma once
-#include<Windows.h>
 #include"AbstractScene.h"
 #include"Cursor.h"
+#include"ProcessStarter.h"
 
 //ゲームメイン
 class GameMainScene : public AbstractScene
@@ -23,14 +23,12 @@ public:
 	AbstractScene* ChangeScene() override;
 
 	//ゲームを起動
-	void StartUp(PROCESS_INFORMATION* process, STARTUPINFO* start, int GameNum = 0);
+	void Process_Start(int GameNum = 0);
 
 private:
-	Cursor* obj_cursor;    //カーソルオブジェクト
+	Cursor* obj_cursor;              //カーソルオブジェクト
+	ProcessStarter* obj_starter;     //起動クラスオブジェクト
 
 	int homeImage;                   //ホーム画面画像
 	int font_exp;                    //画面上部の説明文用フォント
-
-	PROCESS_INFORMATION process_info;      //CreateProcessによって生成されるプロセスの情報
-	STARTUPINFO start_info;                //スタートアップの情報（表示情報） 
 };

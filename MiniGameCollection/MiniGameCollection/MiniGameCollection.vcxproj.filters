@@ -19,6 +19,9 @@
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{9ce5781c-6dde-4ff7-8f9a-c1eb463e75c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\ProcessStarter">
+      <UniqueIdentifier>{deb9fedb-6932-4f89-a8db-662095b1a435}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,6 +42,9 @@
     <ClCompile Include="Scene_Title.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="ProcessStarter.cpp">
+      <Filter>ソース ファイル\ProcessStarter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_Pass.h">
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="Scene_Title.h">
       <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessStarter.h">
+      <Filter>ソース ファイル\ProcessStarter</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
