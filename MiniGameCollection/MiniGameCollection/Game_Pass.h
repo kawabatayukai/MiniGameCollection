@@ -9,7 +9,7 @@
 
 // 0番　ヘビ
 // 1番　ネコ
-// 2番  パックマン　テスト
+// 2番  ポーカー
 // 3番
 // 4番
 // 5番
@@ -29,14 +29,22 @@ const char* Game_Path[GAME_MAX] =
 	"All_Games\\Kawabata_Neko\\Mini_Neco.exe",
 	// 2
 	"All_Games\\Arakaki_Poker",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
+	// 3
+	"All_Games\\Miyagi_Shinkei",
+	// 4
+	"All_Games\\Okuhama_Baba",
+	// 5
+	"All_Games\\Bise_Iraira",
+	// 6
+	"All_Games\\Miyara_Air",
+	// 7
+	"All_Games\\Nakayoshi_Twins",
+	// 8
+	"All_Games\\Tamayose_Command",
+	// 9
+	"All_Games\\Tanahara_Setsuna",
+	// 10
+	"All_Games\\Yonahara_Reversi",
 };
 
 
@@ -46,14 +54,14 @@ const char* Current_Path[GAME_MAX] =
 	"All_Games\\Yoza_Snake",
 	"All_Games\\Kawabata_Neko",
 	"All_Games\\Arakaki_Poker",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
+	"All_Games\\Miyagi_Shinkei",
+	"All_Games\\Okuhama_Baba",
+	"All_Games\\Bise_Iraira",
+	"All_Games\\Miyara_Air",
+	"All_Games\\Nakayoshi_Twins",
+	"All_Games\\Tamayose_Command",
+	"All_Games\\Tanahara_Setsuna",
+	"All_Games\\Yonahara_Reversi",
 };
 
 //説明文　タイトル
