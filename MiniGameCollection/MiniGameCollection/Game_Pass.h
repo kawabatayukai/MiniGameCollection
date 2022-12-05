@@ -24,44 +24,44 @@
 const char* Game_Path[GAME_MAX] =
 {
 	// 0
-	"All_Games\\Yoza_Snake\\SnakeGame_MyProject_ver Test0.15.exe",
+	"All_Games\\0_Yoza_Snake\\SnakeGame_MyProject_ver Test0.15.exe",
 	// 1
-	"All_Games\\Kawabata_Neko\\Mini_Neco.exe",
+	"All_Games\\1_Kawabata_Neko\\Mini_Neco.exe",
 	// 2
-	"All_Games\\Arakaki_Poker",
+	"All_Games\\2_Arakaki_Poker",
 	// 3
-	"All_Games\\Miyagi_Shinkei",
+	"All_Games\\3_Miyagi_Shinkei",
 	// 4
-	"All_Games\\Okuhama_Baba",
+	"All_Games\\4_Okuhama_Baba",
 	// 5
-	"All_Games\\Bise_Iraira",
+	"All_Games\\5_Bise_Iraira",
 	// 6
-	"All_Games\\Miyara_Air",
+	"All_Games\\6_Miyara_Air",
 	// 7
-	"All_Games\\Nakayoshi_Twins",
-	// 8
-	"All_Games\\Tamayose_Command",
+	"All_Games\\7_Nakayoshi_Twins",
 	// 9
-	"All_Games\\Tanahara_Setsuna",
-	// 10
-	"All_Games\\Yonahara_Reversi",
+    "All_Games\\8_Tanahara_Setsuna",
+    // 8
+    "All_Games\\9_Tamayose_Command",
+    // 10
+    "All_Games\\10_Yonahara_Reversi",
 };
 
 
 //ƒJƒŒƒ“ƒgƒfƒBƒŒƒNƒgƒŠ–¼iexeƒtƒ@ƒCƒ‹‚ª’u‚¢‚Ä‚ ‚éêŠj
 const char* Current_Path[GAME_MAX] =
 {
-	"All_Games\\Yoza_Snake",
-	"All_Games\\Kawabata_Neko",
-	"All_Games\\Arakaki_Poker",
-	"All_Games\\Miyagi_Shinkei",
-	"All_Games\\Okuhama_Baba",
-	"All_Games\\Bise_Iraira",
-	"All_Games\\Miyara_Air",
-	"All_Games\\Nakayoshi_Twins",
-	"All_Games\\Tamayose_Command",
-	"All_Games\\Tanahara_Setsuna",
-	"All_Games\\Yonahara_Reversi",
+	"All_Games\\0_Yoza_Snake",
+	"All_Games\\1_Kawabata_Neko",
+	"All_Games\\2_Arakaki_Poker",
+	"All_Games\\3_Miyagi_Shinkei",
+	"All_Games\\4_Okuhama_Baba",
+	"All_Games\\5_Bise_Iraira",
+	"All_Games\\6_Miyara_Air",
+	"All_Games\\7_Nakayoshi_Twins",
+	"All_Games\\8_Tanahara_Setsuna",
+	"All_Games\\9_Tamayose_Command",
+	"All_Games\\10_Yonahara_Reversi",
 };
 
 //à–¾•¶@ƒ^ƒCƒgƒ‹
@@ -70,11 +70,11 @@ const char* Title_Text[GAME_MAX + 1] =
 	"ƒwƒrƒQ[ƒ€",       //0
 	"Corriend",         //1
 	"Open Poker",       //2
-	"‹ß“ú“oê—\’è",     //3
+	"_ŒoŠã",         //3
 	"‹ß“ú“oê—\’è",     //4
 	"‹ß“ú“oê—\’è",     //5
 	"‹ß“ú“oê—\’è",     //6
-	"‹ß“ú“oê—\’è",     //7
+	"twins",            //7
 	"‹ß“ú“oê—\’è",     //8
 	"‹ß“ú“oê—\’è",     //9
 	"‹ß“ú“oê—\’è",     //10
