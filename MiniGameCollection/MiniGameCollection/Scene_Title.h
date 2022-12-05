@@ -20,4 +20,7 @@ public:
 	//シーンの変更
 	AbstractScene* ChangeScene() override;
 
+private:
+	int titleimage;   //タイトル画像
+	int select_num;   //選択番号
 };

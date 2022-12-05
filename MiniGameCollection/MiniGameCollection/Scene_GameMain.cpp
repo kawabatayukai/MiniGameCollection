@@ -65,7 +65,7 @@ AbstractScene* GameMainScene::ChangeScene()
 void GameMainScene::Process_Start(int GameNum)
 {
 	//Aƒ{ƒ^ƒ“‚ÅÀs
-	if (keyflg & PAD_INPUT_A)
+	if (keyflg & PAD_INPUT_A && (Game_Path[GameNum] != ""))
 	{
 		//0`10(‰æ–Êã‚Å‚Í11ŒÂ)
 		if (GameNum < GAME_MAX)
