@@ -24,11 +24,11 @@
 const char* Game_Path[GAME_MAX] =
 {
 	// 0
-	"All_Games\\Snake_Game\\SnakeGame_MyProject_ver Test0.15.exe",
+	"All_Games\\Yoza_Snake\\SnakeGame_MyProject_ver Test0.15.exe",
 	// 1
-	"All_Games\\Neko_Game\\Mini_Neco.exe",
+	"All_Games\\Kawabata_Neko\\Mini_Neco.exe",
 	// 2
-	"All_Games\\Pac_Man\\Game_PACMAN.exe",
+	"All_Games\\Arakaki_Poker",
 	"",
 	"",
 	"",
@@ -43,9 +43,9 @@ const char* Game_Path[GAME_MAX] =
 //カレントディレクトリ名（exeファイルが置いてある場所）
 const char* Current_Path[GAME_MAX] =
 {
-	"All_Games\\Snake_Game",
-	"All_Games\\Neko_Game",
-	"All_Games\\Pac_Man"
+	"All_Games\\Yoza_Snake",
+	"All_Games\\Kawabata_Neko",
+	"All_Games\\Arakaki_Poker",
 	"",
 	"",
 	"",
@@ -61,7 +61,7 @@ const char* Title_Text[GAME_MAX + 1] =
 {
 	"ヘビゲーム",       //0
 	"Corriend",         //1
-	"PAC - MAN TEST",   //2
+	"Open Poker",       //2
 	"近日登場予定",     //3
 	"近日登場予定",     //4
 	"近日登場予定",     //5
