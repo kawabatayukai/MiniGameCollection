@@ -3,7 +3,7 @@
 #include"Game_Pass.h"
 
 //最小化 アリ/ナシ
-//#define WINDOW_MINIMIZE
+#define WINDOW_MINIMIZE
 
 //コンストラクタ
 GameMainScene::GameMainScene()
