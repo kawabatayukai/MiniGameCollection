@@ -38,7 +38,7 @@ const char* Game_Path[GAME_MAX] =
 	// 6
 	"All_Games\\6_Miyara_Air",
 	// 7
-	"All_Games\\7_Nakayoshi_Twins",
+	"All_Games\\7_Nakayoshi_Twins\\twins.exe",
 	// 9
     "All_Games\\8_Tanahara_Setsuna",
     // 8
