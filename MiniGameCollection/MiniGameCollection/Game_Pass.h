@@ -44,7 +44,7 @@ const char* Game_Path[GAME_MAX] =
     // 8
     "All_Games\\9_Tamayose_Command\\miniGame.exe",
     // 10
-    "All_Games\\10_Yonahara_Osero",
+    "All_Games\\10_Yonahara_Osero\\OSEROGame.exe",
 };
 
 
