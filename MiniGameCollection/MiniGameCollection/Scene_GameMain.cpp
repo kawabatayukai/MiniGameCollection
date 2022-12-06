@@ -18,7 +18,7 @@ GameMainScene::GameMainScene()
 	obj_starter = new ProcessStarter();
 
 	//フォントの作成
-	font_exp = CreateFontToHandle(NULL, 80, 3, DX_FONTTYPE_ANTIALIASING_EDGE_4X4);
+	font_exp = CreateFontToHandle(NULL, 80, 1, DX_FONTTYPE_ANTIALIASING_8X8);
 }
 
 //デストラクタ
@@ -49,7 +49,7 @@ void GameMainScene::Draw() const
 	obj_cursor->CursorDraw();
 
 	//ゲームタイトル 説明等
-	DrawFormatStringToHandle(160, 20, 0x000000, font_exp, Title_Text[obj_cursor->GetGameNum()]);
+	DrawFormatStringToHandle(200, 540, 0x000000, font_exp, Title_Text[obj_cursor->GetGameNum()]);
 }
 
 //シーンの変更
