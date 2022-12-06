@@ -28,7 +28,7 @@ const char* Game_Path[GAME_MAX] =
 	// 1
 	"All_Games\\1_Kawabata_Neko\\Mini_Neco.exe",
 	// 2
-	"All_Games\\2_Arakaki_Poker",
+	"All_Games\\2_Arakaki_Poker\\2OpenPoker.exe",
 	// 3
 	"All_Games\\3_Miyagi_Shinkei\\Shinkei.exe",
 	// 4
