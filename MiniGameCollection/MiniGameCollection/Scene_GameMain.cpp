@@ -3,7 +3,7 @@
 #include"Game_Pass.h"
 
 //最小化 アリ/ナシ
-#define WINDOW_MINIMIZE
+//#define WINDOW_MINIMIZE
 
 //コンストラクタ
 GameMainScene::GameMainScene()
@@ -42,8 +42,6 @@ void GameMainScene::Update()
 //描画
 void GameMainScene::Draw() const
 {
-	DrawString(0, 0, "GameMainScene", 0xffffff);
-
 	//ホーム画面の描画
 	DrawGraph(0, 0, homeImage, TRUE);
 
@@ -51,7 +49,7 @@ void GameMainScene::Draw() const
 	obj_cursor->CursorDraw();
 
 	//ゲームタイトル 説明等
-	DrawFormatStringToHandle(160, 20, 0xffffff, font_exp, Title_Text[obj_cursor->GetGameNum()]);
+	DrawFormatStringToHandle(160, 20, 0x000000, font_exp, Title_Text[obj_cursor->GetGameNum()]);
 }
 
 //シーンの変更

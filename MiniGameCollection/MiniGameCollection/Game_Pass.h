@@ -44,7 +44,7 @@ const char* Game_Path[GAME_MAX] =
     // 8
     "All_Games\\9_Tamayose_Command",
     // 10
-    "All_Games\\10_Yonahara_Reversi",
+    "All_Games\\10_Yonahara_Osero",
 };
 
 
@@ -61,7 +61,7 @@ const char* Current_Path[GAME_MAX] =
 	"All_Games\\7_Nakayoshi_Twins",
 	"All_Games\\8_Tanahara_Setsuna",
 	"All_Games\\9_Tamayose_Command",
-	"All_Games\\10_Yonahara_Reversi",
+	"All_Games\\10_Yonahara_Osero",
 };
 
 //à–¾•¶@ƒ^ƒCƒgƒ‹
@@ -72,11 +72,11 @@ const char* Title_Text[GAME_MAX + 1] =
 	"Open Poker",       //2
 	"_ŒoŠã",         //3
 	"‹ß“ú“oê—\’è",     //4
-	"‹ß“ú“oê—\’è",     //5
+	"ƒCƒ‰ƒCƒ‰–_",       //5
 	"‹ß“ú“oê—\’è",     //6
 	"twins",            //7
 	"‹ß“ú“oê—\’è",     //8
 	"‹ß“ú“oê—\’è",     //9
-	"‹ß“ú“oê—\’è",     //10
+	"ƒIƒZƒ",           //10
 	"12ŒÂ–Ú@HELP‚È‚Ç", //(11)
 };
