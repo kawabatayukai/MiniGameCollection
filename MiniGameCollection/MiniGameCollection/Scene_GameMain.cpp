@@ -1,5 +1,6 @@
 #include"DxLib.h"
 #include"Scene_GameMain.h"
+#include"Scene_Title.h"
 #include"Game_Pass.h"
 
 //最小化 アリ/ナシ
@@ -55,6 +56,13 @@ void GameMainScene::Draw() const
 //シーンの変更
 AbstractScene* GameMainScene::ChangeScene()
 {
+	//11番目(画面上は12番目)でAボタンでタイトルへ
+	if (keyflg & PAD_INPUT_A && obj_cursor->GetGameNum() == 11)
+	{
+		//タイトルへ
+		return dynamic_cast<AbstractScene*>(new TitleScene());
+	}
+
 	//更新なし
 	return this;
 }
