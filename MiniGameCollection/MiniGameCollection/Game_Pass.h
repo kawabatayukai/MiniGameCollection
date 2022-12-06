@@ -42,7 +42,7 @@ const char* Game_Path[GAME_MAX] =
 	// 9
     "All_Games\\8_Tanahara_Setsuna",
     // 8
-    "All_Games\\9_Tamayose_Command",
+    "All_Games\\9_Tamayose_Command\\miniGame.exe",
     // 10
     "All_Games\\10_Yonahara_Osero",
 };
@@ -76,7 +76,7 @@ const char* Title_Text[GAME_MAX + 1] =
 	"エアホッケー",     //6
 	"twins",            //7
 	"近日登場予定",     //8
-	"近日登場予定",     //9
+	"コマンドバトル",     //9
 	"オセロ",           //10
 	"タイトルへ戻る",   //(11)
 };
