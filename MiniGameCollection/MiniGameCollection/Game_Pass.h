@@ -30,7 +30,7 @@ const char* Game_Path[GAME_MAX] =
 	// 2
 	"All_Games\\2_Arakaki_Poker",
 	// 3
-	"All_Games\\3_Miyagi_Shinkei",
+	"All_Games\\3_Miyagi_Shinkei\\Shinkei.exe",
 	// 4
 	"All_Games\\4_Okuhama_Baba",
 	// 5
