@@ -71,7 +71,7 @@ const char* Title_Text[GAME_MAX + 1] =
 	"Corriend",         //1
 	"Open Poker",       //2
 	"神経衰弱",         //3
-	"近日登場予定",     //4
+	"ババ抜き",         //4
 	"イライラ棒",       //5
 	"エアホッケー",     //6
 	"twins",            //7
