@@ -20,6 +20,9 @@ GameMainScene::GameMainScene()
 
 	//フォントの作成
 	font_exp = CreateFontToHandle(NULL, 80, 1, DX_FONTTYPE_ANTIALIASING_8X8);
+
+	//音声読み込み
+	se_start = LoadSoundMem("sounds/se_main_button.wav");
 }
 
 //デストラクタ
@@ -73,6 +76,7 @@ void GameMainScene::Process_Start(int GameNum)
 	//Aボタンで実行
 	if (keyflg & PAD_INPUT_A && (Game_Path[GameNum] != ""))
 	{
+
 		//0～10(画面上では11個)
 		if (GameNum < GAME_MAX)
 		{

@@ -14,6 +14,7 @@ public:
 
 private:
 	int image;                       //カーソル画像
+	int se_move;                     //カーソル移動効果音
 
 	int Cursor_x = 0;                //カーソルｘ座標
 	int Cursor_y = 0;                //カーソルｙ座標
