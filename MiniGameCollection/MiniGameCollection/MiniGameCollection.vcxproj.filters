@@ -22,6 +22,9 @@
     <Filter Include="ソース ファイル\ProcessStarter">
       <UniqueIdentifier>{deb9fedb-6932-4f89-a8db-662095b1a435}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Fps">
+      <UniqueIdentifier>{2b599e7a-efd2-4e56-89be-9397a95da43c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
     <ClCompile Include="ProcessStarter.cpp">
       <Filter>ソース ファイル\ProcessStarter</Filter>
     </ClCompile>
+    <ClCompile Include="fps.cpp">
+      <Filter>ソース ファイル\Fps</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game_Pass.h">
@@ -67,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="ProcessStarter.h">
       <Filter>ソース ファイル\ProcessStarter</Filter>
+    </ClInclude>
+    <ClInclude Include="fps.h">
+      <Filter>ソース ファイル\Fps</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
