@@ -36,15 +36,15 @@ const char* Game_Path[GAME_MAX] =
 	// 5
 	"All_Games\\5_Bise_Iraira\\irairabou.exe",
 	// 6
-	"All_Games\\6_Miyara_Air",
+	"All_Games\\6_Miyara_Air\\Air Hokkey.exe",
 	// 7
 	"All_Games\\7_Nakayoshi_Twins\\twins.exe",
 	// 9
     "All_Games\\8_Tanahara_Setsuna",
     // 8
-    "All_Games\\9_Tamayose_Command",
+    "All_Games\\9_Tamayose_Command\\miniGame.exe",
     // 10
-    "All_Games\\10_Yonahara_Osero",
+    "All_Games\\10_Yonahara_Osero\\OSEROGame.exe",
 };
 
 
@@ -71,12 +71,12 @@ const char* Title_Text[GAME_MAX + 1] =
 	"Corriend",         //1
 	"Open Poker",       //2
 	"神経衰弱",         //3
-	"近日登場予定",     //4
+	"ババ抜き",         //4
 	"イライラ棒",       //5
 	"エアホッケー",     //6
 	"twins",            //7
 	"近日登場予定",     //8
-	"近日登場予定",     //9
+	"コマンドバトル",   //9
 	"オセロ",           //10
 	"タイトルへ戻る",   //(11)
 };

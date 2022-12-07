@@ -2,6 +2,7 @@
 
 #include"SceneManager.h"
 #include"Scene_Title.h"
+#include"fps.h"
 
 
 /*　　変数　　*/
@@ -17,6 +18,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//SetWindowSize(1280, 720);
 	SetGraphMode(1280, 720, 32);            //ウィンドウサイズを設定
 	if (DxLib_Init() == -1) { return -1; }  //Dxﾗｲﾌﾞﾗﾘ初期処理
+
+	//FPSControllの初期化
+	FPSControll FpsCtrl(60.0f, 800);
 
 	//シーンマネージャー     　　　　　　　　　　　　　　　タイトルを設定
 	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new TitleScene()));
@@ -43,6 +47,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			DxLib_End();  //DxLib終了処理
 			return 0;
 		}
+
+		//FPS固定処理
+		FpsCtrl.Get();
+		FpsCtrl.Wait();
+		//FpsCtrl.Disp();
 
 		ScreenFlip();
 
