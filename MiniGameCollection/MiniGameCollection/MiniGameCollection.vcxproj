@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="fps.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ProcessStarter.cpp" />
     <ClCompile Include="SceneManager.cpp" />
@@ -162,6 +163,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Cursor.h" />
+    <ClInclude Include="fps.h" />
     <ClInclude Include="Game_Pass.h" />
     <ClInclude Include="ProcessStarter.h" />
     <ClInclude Include="SceneManager.h" />

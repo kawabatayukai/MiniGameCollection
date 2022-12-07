@@ -23,4 +23,7 @@ public:
 private:
 	int titleimage;   //タイトル画像
 	int select_num;   //選択番号
+
+	int se_start;     //スタート効果音
+	int se_select;    //セレクト効果音
 };

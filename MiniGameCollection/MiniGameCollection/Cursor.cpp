@@ -9,6 +9,9 @@ Cursor::Cursor()
 {
 	//画像読み込み
 	image= LoadGraph("images/frame.png");
+
+	//音声読み込み
+	se_move = LoadSoundMem("sounds/se_cursor.wav");
 }
 
 //更新（操作）
@@ -17,6 +20,9 @@ void Cursor::CursorUpdate(int keyflg)
 	//右
 	if (keyflg & PAD_INPUT_RIGHT)
 	{
+		//効果音再生
+		PlaySoundMem(se_move, DX_PLAYTYPE_BACK);
+
 		Cursor_numX++;
 		if (Cursor_numX > 5) Cursor_numX = 0;
 	}
@@ -24,6 +30,9 @@ void Cursor::CursorUpdate(int keyflg)
 	//左
 	if (keyflg & PAD_INPUT_LEFT)
 	{
+		//効果音再生
+		PlaySoundMem(se_move, DX_PLAYTYPE_BACK);
+
 		Cursor_numX--;
 		if (Cursor_numX < 0) Cursor_numX = 5;
 	}
@@ -31,6 +40,9 @@ void Cursor::CursorUpdate(int keyflg)
 	//下
 	if (keyflg & PAD_INPUT_DOWN)
 	{
+		//効果音再生
+		PlaySoundMem(se_move, DX_PLAYTYPE_BACK);
+
 		Cursor_numY++;
 		if (Cursor_numY > 1) Cursor_numY = 0;
 	}
@@ -38,6 +50,9 @@ void Cursor::CursorUpdate(int keyflg)
 	//上
 	if (keyflg & PAD_INPUT_UP)
 	{
+		//効果音再生
+		PlaySoundMem(se_move, DX_PLAYTYPE_BACK);
+
 		Cursor_numY--;
 		if (Cursor_numY < 0) Cursor_numY = 1;
 	}

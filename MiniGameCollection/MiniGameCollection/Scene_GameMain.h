@@ -31,4 +31,6 @@ private:
 
 	int homeImage;                   //ホーム画面画像
 	int font_exp;                    //画面上部の説明文用フォント
+
+	int se_start;                    //決定ボタン音
 };
