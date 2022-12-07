@@ -24,7 +24,7 @@
 const char* Game_Path[GAME_MAX] =
 {
 	// 0
-	"All_Games\\0_Yoza_Snake\\SnakeGame_MyProject_ver 0.45.exe",
+	"All_Games\\0_Yoza_Snake\\SnakeGame_MyProject_ver 1.0.exe",
 	// 1
 	"All_Games\\1_Kawabata_Neko\\Mini_Neco.exe",
 	// 2
