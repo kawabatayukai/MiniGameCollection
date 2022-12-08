@@ -9,7 +9,7 @@ public:
 	TitleScene();
 
 	//デストラクタ
-	//~TitleScene();
+	~TitleScene();
 
 	//更新
 	void Update();
@@ -26,4 +26,5 @@ private:
 
 	int se_start;     //スタート効果音
 	int se_select;    //セレクト効果音
+	int bgm_title;    //BGM
 };

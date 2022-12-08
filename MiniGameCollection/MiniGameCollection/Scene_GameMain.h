@@ -8,7 +8,7 @@ class GameMainScene : public AbstractScene
 {
 public:
 	//コンストラクタ
-	GameMainScene();
+	GameMainScene(int bgmHandle = 0);
 
 	//デストラクタ
 	~GameMainScene();
@@ -33,4 +33,5 @@ private:
 	int font_exp;                    //画面上部の説明文用フォント
 
 	int se_start;                    //決定ボタン音
+	int bgm_main;                   //BGM
 };

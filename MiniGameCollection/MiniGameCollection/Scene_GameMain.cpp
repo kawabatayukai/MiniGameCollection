@@ -6,8 +6,8 @@
 //最小化 アリ/ナシ
 #define WINDOW_MINIMIZE
 
-//コンストラクタ
-GameMainScene::GameMainScene()
+//コンストラクタ                               BGMをタイトルから引継ぎたい
+GameMainScene::GameMainScene(int bgmHandle) : bgm_main(bgmHandle)
 {
 	// 選択画面読み込み
 	homeImage = LoadGraph("images/testHome.png");
@@ -23,19 +23,28 @@ GameMainScene::GameMainScene()
 
 	//音声読み込み
 	se_start = LoadSoundMem("sounds/se_main_button.wav");
+
+	//音量
+	ChangeVolumeSoundMem(150, bgm_main);
 }
 
 //デストラクタ
 GameMainScene::~GameMainScene()
 {
-	delete obj_cursor;
-	delete obj_starter;
+	DeleteSoundMem(se_start);
+	DeleteSoundMem(bgm_main);
 	DeleteFontToHandle(font_exp);
 }
 
 //更新
 void GameMainScene::Update()
 {
+	//BGM
+	if (bgm_main != 0)
+	{
+		if (CheckSoundMem(bgm_main) == 0) PlaySoundMem(bgm_main, DX_PLAYTYPE_LOOP);
+	}
+
 	//カーソル移動
 	obj_cursor->CursorUpdate(keyflg);
 

@@ -12,11 +12,25 @@ TitleScene::TitleScene()
 	//音声読み込み
 	se_start = LoadSoundMem("sounds/se_title_button.wav");
 	se_select = LoadSoundMem("sounds/se_cursor.wav");
+	bgm_title = LoadSoundMem("sounds/bgm_main.wav");
+
+	//音量
+	ChangeVolumeSoundMem(150, bgm_title);
+}
+
+//デストラクタ
+TitleScene::~TitleScene()
+{
+	DeleteSoundMem(se_start);
+	DeleteSoundMem(se_select);
 }
 
 //更新
 void TitleScene::Update()
 {
+	//BGM
+	if (CheckSoundMem(bgm_title) == 0) PlaySoundMem(bgm_title, DX_PLAYTYPE_LOOP);
+
 	//コントローラーで選択
 	if (keyflg & PAD_INPUT_DOWN)
 	{
@@ -59,7 +73,7 @@ AbstractScene* TitleScene::ChangeScene()
 		{
 		case 0:
 			//ゲームメインへ
-			return dynamic_cast<AbstractScene*>(new GameMainScene());
+			return dynamic_cast<AbstractScene*>(new GameMainScene(bgm_title));
 			break;
 
 		case 1:
