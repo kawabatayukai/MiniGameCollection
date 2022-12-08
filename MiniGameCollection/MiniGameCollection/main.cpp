@@ -13,7 +13,7 @@ int g_KeyFlg;      // 入力キー情報
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
-	SetMainWindowText("TEST");              //タイトルを設定
+	SetMainWindowText("MiniGameCollection");              //タイトルを設定
 	ChangeWindowMode(TRUE);                 //ウィンドウモードで起動
 	//SetWindowSize(1280, 720);
 	SetGraphMode(1280, 720, 32);            //ウィンドウサイズを設定

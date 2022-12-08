@@ -32,7 +32,7 @@ const char* Game_Path[GAME_MAX] =
 	// 3
 	"All_Games\\3_Miyagi_Shinkei\\Shinkei.exe",
 	// 4
-	"All_Games\\4_Okuhama_Baba",
+	"All_Games\\4_OkuhamaRiku_Baba\\Tranp_babanuki.exe",
 	// 5
 	"All_Games\\5_Bise_Iraira\\irairabou.exe",
 	// 6
@@ -55,7 +55,7 @@ const char* Current_Path[GAME_MAX] =
 	"All_Games\\1_Kawabata_Neko",
 	"All_Games\\2_Arakaki_Poker",
 	"All_Games\\3_Miyagi_Shinkei",
-	"All_Games\\4_Okuhama_Baba",
+	"All_Games\\4_OkuhamaRiku_Baba",
 	"All_Games\\5_Bise_Iraira",
 	"All_Games\\6_Miyara_Air",
 	"All_Games\\7_Nakayoshi_Twins",
